@@ -6,49 +6,39 @@ public class Question {
     private String secondAnswer;
     private String thirdAnswer;
     private String fourthAnswer;
-    private final int CORRECT_NUMBER_INDEX;
+    private int correctAnswerIndex; // Индекс правильного ответа
+
+    public Question(String question, String firstAnswer, String secondAnswer, String thirdAnswer, String fourthAnswer, int correctAnswerIndex) {
+        this.question = question;
+        this.firstAnswer = firstAnswer;
+        this.secondAnswer = secondAnswer;
+        this.thirdAnswer = thirdAnswer;
+        this.fourthAnswer = fourthAnswer;
+        this.correctAnswerIndex = correctAnswerIndex;
+    }
 
     public String getQuestion() {
         return question;
-    }
-
-    public void setQuestion(String question) {
-        this.question = question;
     }
 
     public String getFirstAnswer() {
         return firstAnswer;
     }
 
-    public void setFirstAnswer(String firstAnswer) {
-        this.firstAnswer = firstAnswer;
-    }
-
     public String getSecondAnswer() {
         return secondAnswer;
     }
 
-    public void setSecondAnswer(String secondAnswer) {
-        this.secondAnswer = secondAnswer;
-    }
-
-    public String getThirdAnswer(String thirdAnswer) {
-        return this.thirdAnswer;
-    }
-
-    public void setThirdAnswer(String thirdAnswer) {
-        this.thirdAnswer = thirdAnswer;
+    public String getThirdAnswer() {
+        return thirdAnswer;
     }
 
     public String getFourthAnswer() {
         return fourthAnswer;
     }
 
-    public void setFourthAnswer(String fourthAnswer) {
-        this.fourthAnswer = fourthAnswer;
-    }
 
-    public Question(int CORRECT_NUMBER_INDEX) {
-        this.CORRECT_NUMBER_INDEX = CORRECT_NUMBER_INDEX;
+    public int getCorrectNumberIndex() {
+        return correctAnswerIndex;
     }
 }

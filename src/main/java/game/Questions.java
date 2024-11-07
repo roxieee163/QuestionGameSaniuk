@@ -4,21 +4,54 @@ public class Questions {
     public static Question[] questions = new Question[5];
 
     static {
-        var question = "Назовите столицу Австралии.";
-        var firstAnswer = "Сидней.";
-        var secondAnswer = "Канберра.";
-        var thirdAnswer = "Брисбен.";
-        var fourthAnswer = "Мельбрун.";
-        var correctAnswer = 2;
-        Question firstQuestion = new Question(correctAnswer);
-        firstQuestion.setQuestion(question);
-        firstQuestion.setFirstAnswer(firstAnswer);
-        firstQuestion.setSecondAnswer(secondAnswer);
-        firstQuestion.getThirdAnswer(thirdAnswer);
-        firstQuestion.setFourthAnswer(fourthAnswer);
-        questions[0] = firstQuestion;
+        // Создание первого вопроса
+        questions[0] = new Question(
+                "Назовите столицу Австралии.",
+                "Сидней.",
+                "Канберра.",
+                "Брисбен.",
+                "Мельбурн.",
+                1 // Индекс правильного ответа
+        );
 
+        // Создание второго вопроса
+        questions[1] = new Question(
+                "Назовите столицу России.",
+                "Санкт-Петербург.",
+                "Москва.",
+                "Великий Новгород.",
+                "Екатеринбург.",
+                1 // Индекс правильного ответа
+        );
 
+        // Создание третьего вопроса
+        questions[2] = new Question(
+                "Назовите столицу Португалии.",
+                "Лиссабон.",
+                "Коимбра.",
+                "Порту.",
+                "Брага.",
+                0 // Индекс правильного ответа
+        );
 
+        // Создание четвертого вопроса
+        questions[3] = new Question(
+                "Назовите столицу Бразилии.",
+                "Рио-де-Жанейро.",
+                "Манаус.",
+                "Сан-Паулу.",
+                "Бразилиа.",
+                3 // Индекс правильного ответа
+        );
+
+        // Создание пятого вопроса
+        questions[4] = new Question(
+                "Назовите столицу Китая.",
+                "Шанхай.",
+                "Гуанчжоу.",
+                "Пекин.",
+                "Тяньцзинь.",
+                2 // Индекс правильного ответа
+        );
     }
 }
